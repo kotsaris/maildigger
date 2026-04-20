@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+output/
+artifacts/
+config.json
+credentials.json
+token.json
+*.token
+.env
+.claude/settings.local.json
