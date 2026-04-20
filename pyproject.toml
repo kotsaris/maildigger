@@ -6,7 +6,26 @@ build-backend = "setuptools.build_meta"
 name = "maildigger"
 version = "0.1.0"
 description = "Dig Gmail emails and attachments into LLM-friendly markdown"
+readme = "README.md"
 requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Kostas Konstantinidis" }]
+keywords = ["gmail", "email", "imap", "llm", "markdown", "extraction", "mbox", "eml"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Email",
+    "Topic :: Utilities",
+]
 dependencies = [
     "click>=8.1.0",
     "pdfplumber>=0.10.0",
@@ -17,6 +36,11 @@ dependencies = [
     "markdownify>=0.11.0",
     "rich>=13.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/kotsaris/maildigger"
+Source = "https://github.com/kotsaris/maildigger"
+Issues = "https://github.com/kotsaris/maildigger/issues"
 
 [project.scripts]
 maildigger = "maildigger.cli:main"
